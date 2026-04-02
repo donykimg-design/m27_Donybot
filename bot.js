@@ -73,7 +73,7 @@ bot.on('message', async (msg) => {
     // --- ASOSIY MENYU TUGMALARI ---
     if (text === '👨‍💻 Men haqimda') {
         bot.sendMessage(chatId, 
-            `👨‍💻 <b>Ismim m27</b>\n\n` +
+            `👨‍💻 <b>Ismim Dostonbek</b>\n\n` +
             `🎓 Texnikum 1/2 talabasi\n` +
             `🚀 AI developer va bo'lajak Dasturchi`, 
             { parse_mode: 'HTML' });
