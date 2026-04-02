@@ -160,4 +160,22 @@ bot.on('callback_query', (query) => {
     }
 });
 
+// ASOSIY ERROR HANDLING (BOT HAR DOIM UYG'OQ TURISHI UCHUN)
+bot.on('polling_error', (error) => {
+    console.log('🤖 Polling error:', error.message);
+});
+
+bot.on('error', (error) => {
+    console.log('🤖 General error:', error.message);
+});
+
+// KUTILMAGAN XATOLARDA TO'XTAB QOLMASLIGI UCHUN
+process.on('uncaughtException', (error) => {
+    console.log('🤖 Uncaught Exception:', error.message);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+    console.log('🤖 Unhandled Rejection:', reason);
+});
+
 console.log("🚀 m27 Rasmiy Yordamchi Boti muvaffaqiyatli ishga tushdi!");
