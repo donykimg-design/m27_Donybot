@@ -48,7 +48,7 @@ const mainKeyboard = {
 };
 
 bot.onText(/\/start/, (msg) => {
-    bot.sendMessage(msg.chat.id, `👋 Assalomu alaykum, <b>${msg.from.first_name}</b>!\n\nBu m27 ning rasmiy yordamchi boti. Quyidagi tugmalar orqali ma'lumot olishingiz yoki menga murojaat qoldirishingiz mumkin.`, { parse_mode: 'HTML', ...mainKeyboard });
+    bot.sendMessage(msg.chat.id, `👋 Assalomu alaykum, <b>${msg.from.first_name}</b>!\n\nBu m27_Dony ning rasmiy yordamchi boti. Quyidagi tugmalar orqali ma'lumot olishingiz yoki menga murojaat qoldirishingiz mumkin.`, { parse_mode: 'HTML', ...mainKeyboard });
 });
 
 bot.on('message', async (msg) => {
