@@ -14,7 +14,7 @@ app.listen(PORT, () => console.log(`Server is running on ${PORT}`));
 
 // Self-ping mexanizmi (Serverni uyg'oq tutish uchun)
 // Render linkini olganingizdan so'ng, uni shu yerga almashtiring
-const RENDER_URL = `https://m27-personalbot.onrender.com`; 
+const RENDER_URL = `https://m27-donybot.onrender.com`; 
 
 setInterval(async () => {
     try {
